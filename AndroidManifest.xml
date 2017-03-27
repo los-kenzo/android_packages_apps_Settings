@@ -133,8 +133,16 @@
 
         <activity android:name=".Settings$WirelessSettings"
             android:label="@string/header_category_wireless_networks">
-            <intent-filter android:priority="4">
+            <intent-filter android:priority="5">
                 <action android:name="com.android.settings.category.wireless" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Settings$LosKenzoSettings"
+            android:label="Customization">
+            <intent-filter android:priority="4">
+                <action android:name="com.android.settings.category.customization" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -961,6 +969,33 @@
             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
                 android:value="true" />
         </activity>
+
+	        <activity android:name="Settings$LosKenzoSettingsActivity"
+             android:label="Customization"
+             android:icon="@drawable/ic_settings_loskenzo"
+             android:taskAffinity="">
+             <intent-filter android:priority="1">
+                 <action android:name="com.android.settings.LOSKENZO_SETTINGS" />
+                 <category android:name="android.intent.category.DEFAULT" />
+             </intent-filter>
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+                 <category android:name="android.intent.category.DEFAULT" />
+                 <category android:name="android.intent.category.VOICE_LAUNCH" />
+                 <category android:name="com.android.settings.SHORTCUT" />
+             </intent-filter>
+             <intent-filter android:priority="9">
+                 <action android:name="com.android.settings.action.SETTINGS" />
+             </intent-filter>
+             <meta-data android:name="com.android.settings.category"
+                 android:value="com.android.settings.category.customization" />
+             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                 android:value="com.android.settings.LosKenzoSettings" />
+             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
+                 android:value="true" />
+	     <meta-data android:name="com.android.settings.summary"
+                 android:value="Control los-kenzo settings" />
+         </activity>
 
         <activity android:name="Settings$DisplaySettingsActivity"
                 android:label="@string/display_settings"

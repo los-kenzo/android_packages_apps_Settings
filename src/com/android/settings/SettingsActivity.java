@@ -252,6 +252,7 @@ public class SettingsActivity extends SettingsDrawerActivity
             Settings.WirelessSettingsActivity.class.getName(),
             //device_section
             Settings.HomeSettingsActivity.class.getName(),
+	    Settings.LosKenzoSettingsActivity.class.getName(),
             Settings.SoundSettingsActivity.class.getName(),
             Settings.DisplaySettingsActivity.class.getName(),
             Settings.StorageSettingsActivity.class.getName(),
@@ -291,7 +292,8 @@ public class SettingsActivity extends SettingsDrawerActivity
             UserDictionaryList.class.getName(),
             UserDictionarySettings.class.getName(),
             HomeSettings.class.getName(),
-            DisplaySettings.class.getName(),
+            LosKenzoSettings.class.getName(),
+	    DisplaySettings.class.getName(),
             DeviceInfoSettings.class.getName(),
             ManageApplications.class.getName(),
             NotificationApps.class.getName(),
