@@ -20,25 +20,47 @@ package com.android.settings.loskenzo;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 
 import android.app.Activity;
-import android.content.ComponentName; 
-import android.content.pm.ActivityInfo;
-import android.content.res.Configuration;
-import android.os.Bundle;
-import android.view.Surface;
-import android.preference.Preference;
-import com.android.settings.R;
 import android.content.Context;
-import com.android.settings.dashboard.DashboardSummary;
-import com.android.settings.Utils;
+import android.content.ContentResolver;
+import android.app.WallpaperManager;
+import android.content.Intent;
+import android.content.res.Resources;
+import android.hardware.fingerprint.FingerprintManager;
+import android.net.Uri;
+import android.os.Bundle;
+import android.support.v14.preference.SwitchPreference;
+import android.support.v7.preference.ListPreference;
+import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceCategory;
+import android.support.v7.preference.PreferenceScreen;
 
+import android.provider.Settings;
+import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-public class Misc extends SettingsPreferenceFragment {
+public class Misc extends SettingsPreferenceFragment implements
+         Preference.OnPreferenceChangeListener {
+
+	private static final String FINGERPRINT_VIB = "fingerprint_success_vib";
+	private SwitchPreference mFingerprintVib;
+        private FingerprintManager mFingerprintManager;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.los_kenzo_misc);
+	ContentResolver resolver = getActivity().getContentResolver();
+	final PreferenceScreen prefScreen = getPreferenceScreen();
+
+	mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
+        mFingerprintVib = (SwitchPreference) findPreference(FINGERPRINT_VIB);
+        if (!mFingerprintManager.isHardwareDetected()){
+            prefScreen.removePreference(mFingerprintVib);
+        } else {
+        mFingerprintVib.setChecked((Settings.System.getInt(getContentResolver(),
+                Settings.System.FINGERPRINT_SUCCESS_VIB, 1) == 1));
+        mFingerprintVib.setOnPreferenceChangeListener(this);
+        }
 
     }
 
@@ -47,32 +69,15 @@ public class Misc extends SettingsPreferenceFragment {
         return MetricsEvent.DEVICEINFO;
     }
 
-    public static void lockCurrentOrientation(Activity activity) {
-        int currentRotation = activity.getWindowManager().getDefaultDisplay().getRotation();
-        int orientation = activity.getResources().getConfiguration().orientation;
-        int frozenRotation = ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED;
-        switch (currentRotation) {
-            case Surface.ROTATION_0:
-                frozenRotation = orientation == Configuration.ORIENTATION_LANDSCAPE
-                        ? ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
-                        : ActivityInfo.SCREEN_ORIENTATION_PORTRAIT;
-                break;
-            case Surface.ROTATION_90:
-                frozenRotation = orientation == Configuration.ORIENTATION_PORTRAIT
-                        ? ActivityInfo.SCREEN_ORIENTATION_REVERSE_PORTRAIT
-                        : ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE;
-                break;
-            case Surface.ROTATION_180:
-                frozenRotation = orientation == Configuration.ORIENTATION_LANDSCAPE
-                        ? ActivityInfo.SCREEN_ORIENTATION_REVERSE_LANDSCAPE
-                        : ActivityInfo.SCREEN_ORIENTATION_REVERSE_PORTRAIT;
-                break;
-            case Surface.ROTATION_270:
-                frozenRotation = orientation == Configuration.ORIENTATION_PORTRAIT
-                        ? ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
-                        : ActivityInfo.SCREEN_ORIENTATION_REVERSE_LANDSCAPE;
-                break;
-        }
-        activity.setRequestedOrientation(frozenRotation);
-    }
+	     public boolean onPreferenceChange(Preference preference, Object newValue) {
+         ContentResolver resolver = getActivity().getContentResolver();
+	if (preference == mFingerprintVib) {
+             boolean value = (Boolean) newValue;
+             Settings.System.putInt(getActivity().getContentResolver(),
+                     Settings.System.FINGERPRINT_SUCCESS_VIB, value ? 1 : 0);
+             return true;
+          }
+          return false;
+      }
+
 }
