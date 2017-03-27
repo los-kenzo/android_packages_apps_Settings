@@ -17,14 +17,7 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     xmlns:lineage="http://schemas.android.com/apk/res/cyanogenmod.platform"
-    android:title="Customization"
+    android:title="Miscellaneous"
     settings:keywords="@string/keywords_gesture">
-
-    <!-- Miscellaneous controls -->
-        <PreferenceScreen
-            android:key="misc_category"
-            android:title="Miscellaneous" 
-            android:fragment="com.android.settings.loskenzo.Misc"
-            android:icon="@drawable/ic_settings_misc"/>
 
 </PreferenceScreen>
