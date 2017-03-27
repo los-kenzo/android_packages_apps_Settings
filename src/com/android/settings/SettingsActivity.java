@@ -90,7 +90,6 @@ import com.android.settings.display.NightDisplaySettings;
 import com.android.settings.fuelgauge.BatterySaverSettings;
 import com.android.settings.fuelgauge.PowerUsageDetail;
 import com.android.settings.fuelgauge.PowerUsageSummary;
-import com.android.settings.gestures.GestureSettings;
 import com.android.settings.inputmethod.AvailableVirtualKeyboardFragment;
 import com.android.settings.inputmethod.InputMethodAndLanguageSettings;
 import com.android.settings.inputmethod.KeyboardLayoutPickerFragment;
@@ -258,7 +257,6 @@ public class SettingsActivity extends SettingsDrawerActivity
             Settings.StorageSettingsActivity.class.getName(),
             Settings.ManageApplicationsActivity.class.getName(),
             Settings.PowerUsageSummaryActivity.class.getName(),
-            Settings.GestureSettingsActivity.class.getName(),
             //personal_section
             Settings.LocationSettingsActivity.class.getName(),
             Settings.SecuritySettingsActivity.class.getName(),
@@ -320,7 +318,6 @@ public class SettingsActivity extends SettingsDrawerActivity
             PowerUsageSummary.class.getName(),
             AccountSyncSettings.class.getName(),
             AccountSettings.class.getName(),
-            GestureSettings.class.getName(),
             CryptKeeperSettings.class.getName(),
             DataUsageSummary.class.getName(),
             DreamSettings.class.getName(),

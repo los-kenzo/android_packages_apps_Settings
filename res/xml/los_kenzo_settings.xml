@@ -20,6 +20,13 @@
     android:title="Customization"
     settings:keywords="@string/keywords_gesture">
 
+    <!-- Gesture settings -->
+        <PreferenceScreen
+            android:key="gesture_category"
+            android:title="Gestures" 
+            android:fragment="com.android.settings.gestures.GestureSettings"
+            android:icon="@drawable/ic_settings_gestures"/>
+
     <!-- Miscellaneous controls -->
         <PreferenceScreen
             android:key="misc_category"
