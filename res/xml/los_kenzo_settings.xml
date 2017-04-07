@@ -20,12 +20,12 @@
     android:title="Customization"
     settings:keywords="@string/keywords_gesture">
 
-    <!-- Statusbar settings -->
+    <!-- Statusbar settings
         <PreferenceScreen
             android:key="sbar_category"
             android:title="Statusbar" 
             android:fragment="com.android.settings.loskenzo.StatusBar"
-            android:icon="@drawable/ic_settings_statusbar"/>
+            android:icon="@drawable/ic_settings_statusbar"/>  -->
 
     <!-- Gesture settings -->
         <PreferenceScreen
