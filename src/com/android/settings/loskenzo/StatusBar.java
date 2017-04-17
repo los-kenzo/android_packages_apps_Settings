@@ -37,7 +37,7 @@ import android.provider.Settings;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-public class StatusBar extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
+public class StatusBar extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -50,5 +50,11 @@ public class StatusBar extends SettingsPreferenceFragment implements OnPreferenc
     protected int getMetricsCategory() {
         return MetricsEvent.DEVICEINFO;
     }
+
+    @Override
+	public boolean onPreferenceChange(Preference preference, Object newValue) {
+         ContentResolver resolver = getActivity().getContentResolver();
+          return false;
+      }
 
 }

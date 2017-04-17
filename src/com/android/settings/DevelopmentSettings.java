@@ -2264,7 +2264,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         } else if (preference == mDisableOverlays) {
             writeDisableOverlaysOption();
         } else if (preference == mShowCpuInfo) {
- +            writeCpuInfoOptions();
+            writeCpuInfoOptions();
 	} else if (preference == mImmediatelyDestroyActivities) {
             writeImmediatelyDestroyActivitiesOptions();
         } else if (preference == mShowAllANRs) {
