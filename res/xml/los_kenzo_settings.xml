@@ -34,6 +34,13 @@
             android:fragment="com.android.settings.gestures.GestureSettings"
             android:icon="@drawable/ic_settings_gestures"/>
 
+    <!-- QsTiles settings -->
+        <PreferenceScreen
+            android:key="sbar_category"
+            android:title="Quicksettings" 
+            android:fragment="com.android.settings.loskenzo.QsTiles"
+            android:icon="@drawable/ic_settings_statusbar"/>
+
     <!-- Miscellaneous controls -->
         <PreferenceScreen
             android:key="misc_category"
