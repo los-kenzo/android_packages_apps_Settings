@@ -15,6 +15,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <string name="qs_advanced_data_title">Data easy toggle</string>
+    <string name="qs_advanced_data_summary">Enable one tap action to enable or disable data</string>
     <string name="qs_bt_easy_toggle_title">Bluetooth easy toggle</string>
     <string name="qs_bt_easy_toggle_summary">Makes it so one click will turn Bluetooth on or off instead of taking you to settings</string>
     <string name="qs_wifi_easy_toggle_title">WiFi easy toggle</string>

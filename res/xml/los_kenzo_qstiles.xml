@@ -29,4 +29,10 @@
         android:summary="@string/qs_bt_easy_toggle_summary"
         android:defaultValue="false" />
 
+    <com.android.settings.preferences.SecureSettingSwitchPreference
+        android:key="qs_data_advanced"
+        android:title="@string/qs_advanced_data_title"
+        android:summary="@string/qs_advanced_data_summary"
+        android:defaultValue="false" />
+
 </PreferenceScreen>
