@@ -17,13 +17,13 @@
     android:title="Quicksettings"
     settings:keywords="Quicksettings">
 
-    <SwitchPreference
+    <com.android.settings.preferences.SecureSettingSwitchPreference
         android:key="qs_wifi_easy_toggle"
         android:title="@string/qs_wifi_easy_toggle_title"
         android:summary="@string/qs_wifi_easy_toggle_summary"
         android:defaultValue="false" />
 
-    <SwitchPreference
+    <com.android.settings.preferences.SecureSettingSwitchPreference
         android:key="qs_bt_easy_toggle"
         android:title="@string/qs_bt_easy_toggle_title"
         android:summary="@string/qs_bt_easy_toggle_summary"

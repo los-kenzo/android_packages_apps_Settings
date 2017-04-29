@@ -37,7 +37,7 @@ import android.provider.Settings;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-public class QsTiles extends SettingsPreferenceFragment implements OnPreferenceChangeListener {
+public class QsTiles extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -45,6 +45,12 @@ public class QsTiles extends SettingsPreferenceFragment implements OnPreferenceC
         addPreferencesFromResource(R.xml.los_kenzo_qstiles);
 
     }
+
+   @Override
+	public boolean onPreferenceChange(Preference preference, Object newValue) {
+         ContentResolver resolver = getActivity().getContentResolver();
+          return false;
+      }
 
     @Override
     protected int getMetricsCategory() {
