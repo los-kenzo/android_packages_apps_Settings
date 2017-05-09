@@ -15,6 +15,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+
+    <!-- Sound: Other sounds: Title for the option enabling screenshot sounds. [CHAR LIMIT=30] -->
+    <string name="screenshot_shutter_sound_title">Screenshot shutter sound</string>
+
     <string name="qs_advanced_data_title">Data easy toggle</string>
     <string name="qs_advanced_data_summary">Enable one tap action to enable or disable data</string>
     <string name="qs_bt_easy_toggle_title">Bluetooth easy toggle</string>
