@@ -7973,4 +7973,8 @@
     <string name="protected_apps">Protected apps</string>
     <string name="saving_protected_components">Saving component state</string>
 
+    <!-- Fingerprint unlock keystore -->
+    <string name="fp_unlock_keystore_title">Fingerprint on reboot</string>
+    <string name="fp_unlock_keystore_summary">Unlock device with fingerprint after reboot without PIN/Password/Pattern\nNote: use at your own risk!</string>
+
 </resources>
