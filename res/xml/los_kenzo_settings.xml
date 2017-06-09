@@ -48,4 +48,12 @@
             android:fragment="com.android.settings.loskenzo.Misc"
             android:icon="@drawable/ic_settings_misc"/>
 
+    <!-- Wakelock blocker -->
+        <PreferenceScreen
+            android:key="wakelock_blocker"
+	    android:title="@string/wakelock_blocker_title"
+            android:layout="@layout/preference_wakelock" 
+            android:fragment="com.android.settings.loskenzo.WakelockBlocker.java"
+            android:icon="@drawable/ic_wakelockblocker"/>
+
 </PreferenceScreen>
