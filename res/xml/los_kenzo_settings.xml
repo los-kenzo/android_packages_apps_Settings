@@ -20,12 +20,12 @@
     android:title="Customization"
     settings:keywords="@string/keywords_gesture">
 
-    <!-- Statusbar settings
+    <!-- Statusbar settings -->
         <PreferenceScreen
             android:key="sbar_category"
             android:title="Statusbar" 
             android:fragment="com.android.settings.loskenzo.StatusBar"
-            android:icon="@drawable/ic_settings_statusbar"/>  -->
+            android:icon="@drawable/ic_settings_statusbar"/>
 
     <!-- Gesture settings -->
         <PreferenceScreen
@@ -52,8 +52,7 @@
         <PreferenceScreen
             android:key="wakelock_blocker"
 	    android:title="@string/wakelock_blocker_title"
-            android:layout="@layout/preference_wakelock" 
-            android:fragment="com.android.settings.loskenzo.WakelockBlocker.java"
-            android:icon="@drawable/ic_wakelockblocker"/>
+            android:fragment="com.android.settings.loskenzo.WakelockBlocker"
+            android:icon="@drawable/ic_settings_security"/>
 
 </PreferenceScreen>
