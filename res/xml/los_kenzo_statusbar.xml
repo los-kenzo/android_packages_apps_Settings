@@ -17,4 +17,11 @@
     android:title="Statusbar"
     settings:keywords="@string/keywords_gesture">
 
+    <ListPreference
+        android:key="smart_pulldown"
+        android:title="@string/smart_pulldown_title"
+        android:entries="@array/smart_pulldown_entries"
+        android:entryValues="@array/smart_pulldown_values"
+        android:persistent="false" />
+
 </PreferenceScreen>
