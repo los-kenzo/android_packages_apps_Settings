@@ -36,6 +36,7 @@ import android.support.v7.preference.PreferenceScreen;
 import android.provider.Settings;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.preferences.CustomSeekBarPreference;
 
 public class QsTiles extends SettingsPreferenceFragment implements Preference.OnPreferenceChangeListener {
 
@@ -54,10 +55,11 @@ public class QsTiles extends SettingsPreferenceFragment implements Preference.On
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.los_kenzo_qstiles);
 	int defaultValue;
+	ContentResolver resolver = getActivity().getContentResolver();
 
         mQsColumns = (CustomSeekBarPreference) findPreference(PREF_COLUMNS);
         int columnsQs = Settings.System.getInt(resolver,
-                Settings.System.QS_COLUMNS, 3);
+                Settings.System.QS_LAYOUT_COLUMNS, 3);
         mQsColumns.setValue(columnsQs / 1);
         mQsColumns.setOnPreferenceChangeListener(this);
 
@@ -88,22 +90,22 @@ public class QsTiles extends SettingsPreferenceFragment implements Preference.On
 	 int index;
          ContentResolver resolver = getActivity().getContentResolver();
 	 if (preference == mQsColumns) {
-            int qsColumns = (Integer) objValue;
+            int qsColumns = (Integer) newValue;
             Settings.System.putInt(getActivity().getContentResolver(),
             Settings.System.QS_LAYOUT_COLUMNS, qsColumns * 1);
             return true;
           } else if (preference == mRowsPortrait) {
-            int rowsPortrait = (Integer) objValue;
+            int rowsPortrait = (Integer) newValue;
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.QS_ROWS_PORTRAIT, rowsPortrait * 1);
             return true;
           } else if (preference == mRowsLandscape) {
-            int rowsLandscape = (Integer) objValue;
+            int rowsLandscape = (Integer) newValue;
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.QS_ROWS_LANDSCAPE, rowsLandscape * 1);
            return true;
 	  } else if (preference == mSysuiQqsCount) {
-            int SysuiQqsCount = (Integer) objValue;
+            int SysuiQqsCount = (Integer) newValue;
             Settings.Secure.putInt(getActivity().getContentResolver(),
                     Settings.Secure.QQS_COUNT, SysuiQqsCount * 1);
               return true;
