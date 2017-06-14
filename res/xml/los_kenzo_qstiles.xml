@@ -47,7 +47,7 @@
         settings:units=""
         android:persistent="false" />
 
-    <com.teamoctos.tentacles.preference.CustomSeekBarPreference
+    <com.android.settings.preferences.CustomSeekBarPreference
         android:key="qs_rows_portrait"
         android:title="@string/qs_rows_portrait_title"
         settings:max="7"
@@ -55,11 +55,19 @@
         settings:units=""
         android:persistent="false" />
 
-    <com.teamoctos.tentacles.preference.CustomSeekBarPreference
+    <com.android.settings.preferences.CustomSeekBarPreference
         android:key="qs_rows_landscape"
         android:title="@string/qs_rows_landscape_title"
         settings:max="3"
         settings:min="1"
+        settings:units=""
+        android:persistent="false" />
+
+    <com.android.settings.preferences.CustomSeekBarPreference
+        android:key="sysui_qqs_count_key"
+        android:title="@string/qs_small_tiles_title"
+        settings:max="8"
+        settings:min="3"
         settings:units=""
         android:persistent="false" />
 
