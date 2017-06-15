@@ -27,6 +27,20 @@
             android:fragment="com.android.settings.loskenzo.StatusBar"
             android:icon="@drawable/ic_settings_statusbar"/>
 
+    <!-- QsTiles settings -->
+        <PreferenceScreen
+            android:key="sbar_category"
+            android:title="Quicksettings" 
+            android:fragment="com.android.settings.loskenzo.QsTiles"
+            android:icon="@drawable/ic_settings_quicksettings"/>
+
+    <!-- Button settings -->
+        <PreferenceScreen
+            android:key="button_category"
+            android:title="Buttons" 
+            android:fragment="com.android.settings.loskenzo.ButtonSettings"
+            android:icon="@drawable/ic_settings_buttons"/>
+
     <!-- Gesture settings -->
         <PreferenceScreen
             android:key="gesture_category"
@@ -34,25 +48,11 @@
             android:fragment="com.android.settings.gestures.GestureSettings"
             android:icon="@drawable/ic_settings_gestures"/>
 
-    <!-- QsTiles settings -->
-        <PreferenceScreen
-            android:key="sbar_category"
-            android:title="Quicksettings" 
-            android:fragment="com.android.settings.loskenzo.QsTiles"
-            android:icon="@drawable/ic_settings_statusbar"/>
-
     <!-- Miscellaneous controls -->
         <PreferenceScreen
             android:key="misc_category"
             android:title="Miscellaneous" 
             android:fragment="com.android.settings.loskenzo.Misc"
             android:icon="@drawable/ic_settings_misc"/>
-
-    <!-- Wakelock blocker -->
-        <PreferenceScreen
-            android:key="wakelock_blocker"
-	    android:title="@string/wakelock_blocker_title"
-            android:fragment="com.android.settings.loskenzo.WakelockBlocker"
-            android:icon="@drawable/ic_settings_security"/>
 
 </PreferenceScreen>

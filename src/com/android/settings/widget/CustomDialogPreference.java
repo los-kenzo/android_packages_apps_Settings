@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.android.settings;
+package com.android.settings.widget;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -78,10 +78,6 @@ public class CustomDialogPreference extends DialogPreference {
         mFragment = fragment;
     }
 
-    protected boolean onDismissDialog(final DialogInterface dialog, final int which) {
-        return true;
-    }
-
     public static class CustomPreferenceDialogFragment extends PreferenceDialogFragment {
 
         public static CustomPreferenceDialogFragment newInstance(String key) {
@@ -94,45 +90,6 @@ public class CustomDialogPreference extends DialogPreference {
 
         private CustomDialogPreference getCustomizablePreference() {
             return (CustomDialogPreference) getPreference();
-        }
-
-        private class OnDismissListener implements View.OnClickListener {
-            private final int mWhich;
-            private final DialogInterface mDialog;
-
-            public OnDismissListener(final DialogInterface dialog, final int which) {
-                mWhich = which;
-                mDialog = dialog;
-            }
-
-            @Override
-            public void onClick(final View view) {
-                CustomPreferenceDialogFragment.this.onClick(mDialog, mWhich);
-                if (getCustomizablePreference().onDismissDialog(mDialog, mWhich)) {
-                    mDialog.dismiss();
-                }
-            }
-        }
-
-        @Override
-        public void onStart() {
-            super.onStart();
-
-            if (getDialog() instanceof AlertDialog) {
-                final AlertDialog dialog = (AlertDialog) getDialog();
-                if (dialog.getButton(Dialog.BUTTON_NEUTRAL) != null) {
-                    dialog.getButton(Dialog.BUTTON_NEUTRAL).setOnClickListener(
-                            new OnDismissListener(dialog, Dialog.BUTTON_NEUTRAL));
-                }
-                if (dialog.getButton(Dialog.BUTTON_POSITIVE) != null) {
-                    dialog.getButton(Dialog.BUTTON_POSITIVE).setOnClickListener(
-                            new OnDismissListener(dialog, Dialog.BUTTON_POSITIVE));
-                }
-                if (dialog.getButton(Dialog.BUTTON_NEGATIVE) != null) {
-                    dialog.getButton(Dialog.BUTTON_NEGATIVE).setOnClickListener(
-                            new OnDismissListener(dialog, Dialog.BUTTON_NEGATIVE));
-                }
-            }
         }
 
         @Override

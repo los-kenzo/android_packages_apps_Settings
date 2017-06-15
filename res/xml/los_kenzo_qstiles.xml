@@ -17,6 +17,9 @@
     android:title="Quicksettings"
     settings:keywords="Quicksettings">
 
+    <PreferenceCategory
+        android:title="Easy toggles">
+
     <com.android.settings.preferences.SecureSettingSwitchPreference
         android:key="qs_wifi_easy_toggle"
         android:title="@string/qs_wifi_easy_toggle_title"
@@ -34,6 +37,8 @@
         android:title="@string/qs_advanced_data_title"
         android:summary="@string/qs_advanced_data_summary"
         android:defaultValue="false" />
+
+    </PreferenceCategory>
 
     <PreferenceCategory
         android:key="qs_layout_category"
