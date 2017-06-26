@@ -38,7 +38,7 @@
         android:summary="Hide the traffic monitor arrows"
         android:defaultValue="false" />
 
-    <org.cyanogenmod.cmparts.statusbar.NetworkTrafficThresholdSeekBarPreference
+    <com.android.settings.loskenzo.NetworkTrafficThresholdSeekBarPreference
         android:key="network_traffic_autohide_threshold"
         android:title="@string/network_traffic_autohide_threshold_title"
         android:persistent="false" />
