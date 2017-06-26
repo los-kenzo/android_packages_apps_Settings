@@ -253,6 +253,8 @@
   <string name="unlock_scramble_pin_layout_summary">PIN-lay-out door elkaar husselen bij apparaat ontgrendelen</string>
   <!-- lock screen visualizer -->
   <string name="lockscreen_visualizer_title">Muziekvisualisaties weergeven</string>
+  <!-- Lock screen cover art -->
+  <!-- Double tap to sleep on keyguard -->
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Patroon opnieuw instellen</string>
   <string name="lockpattern_settings_reset_summary">Voer primair e-mailadres en bijbehorende wachtwoord in om patroon opnieuw in te stellen</string>
@@ -420,4 +422,11 @@
   <string name="sub_activate_failed">Inschakelen mislukt.</string>
   <string name="sub_deactivate_success">Simkaart uitgeschakeld.</string>
   <string name="sub_deactivate_failed">Uitschakelen mislukt.</string>
+  <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
+  <!-- SAR information -->
+  <string name="maximum_head_level">Hoofd: %1$s W/kg</string>
+  <string name="maximum_body_level">Lichaam: %1$s W/kg</string>
+  <!-- IC Codes -->
+  <string name="ic_code_model">Model: %1$s</string>
+  <string name="ic_code_full">IC: %1$s</string>
 </resources>

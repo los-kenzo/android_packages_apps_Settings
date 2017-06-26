@@ -254,6 +254,10 @@
   <string name="unlock_scramble_pin_layout_summary">Přeházet rozložení pro zadání PIN při odemykání zařízení</string>
   <!-- lock screen visualizer -->
   <string name="lockscreen_visualizer_title">Zobrazit hudební vizualizaci</string>
+  <!-- Lock screen cover art -->
+  <string name="lockscreen_media_art_title">Zobrazit obal médií</string>
+  <!-- Double tap to sleep on keyguard -->
+  <string name="double_tap_sleep_anywhere_title">Dvojím poklepáním kdekoliv na obrazovku uvést zařízení do režimu spánku</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Obnovit gesto</string>
   <string name="lockpattern_settings_reset_summary">Zadejte primární e-mailový účet a heslo pro obnovení bezpečnostního gesta</string>
@@ -421,4 +425,11 @@
   <string name="sub_activate_failed">Aktivace selhala.</string>
   <string name="sub_deactivate_success">SIM karta deaktivována.</string>
   <string name="sub_deactivate_failed">Deaktivace selhala.</string>
+  <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
+  <!-- SAR information -->
+  <string name="maximum_head_level">Hlava: %1$s W/kg</string>
+  <string name="maximum_body_level">Tělo: %1$s W/kg</string>
+  <!-- IC Codes -->
+  <string name="ic_code_model">Model: %1$s</string>
+  <string name="ic_code_full">IC: %1$s</string>
 </resources>

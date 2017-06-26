@@ -252,6 +252,10 @@
   <string name="unlock_scramble_pin_layout_summary">장치를 잠금 해제할 때 PIN 레이아웃 섞기</string>
   <!-- lock screen visualizer -->
   <string name="lockscreen_visualizer_title">음악 시각화 표시</string>
+  <!-- Lock screen cover art -->
+  <string name="lockscreen_media_art_title">앨범 커버 이미지 표시</string>
+  <!-- Double tap to sleep on keyguard -->
+  <string name="double_tap_sleep_anywhere_title">아무 곳이나 두 번 두드려 화면 끄기</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">패턴 재설정</string>
   <string name="lockpattern_settings_reset_summary">주 이메일 계정과 비밀번호를 입력하여 패턴 잠금을 재설정합니다</string>
@@ -419,4 +423,11 @@
   <string name="sub_activate_failed">활성화 실패</string>
   <string name="sub_deactivate_success">SIM카드가 비활성화되었습니다.</string>
   <string name="sub_deactivate_failed">비활성화 실패</string>
+  <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
+  <!-- SAR information -->
+  <string name="maximum_head_level">머리: %1$s W/kg</string>
+  <string name="maximum_body_level">몸: %1$s W/kg</string>
+  <!-- IC Codes -->
+  <string name="ic_code_model">모델: %1$s</string>
+  <string name="ic_code_full">IC: %1$s</string>
 </resources>

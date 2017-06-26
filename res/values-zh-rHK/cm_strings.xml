@@ -172,6 +172,8 @@
   <string name="unlock_scramble_pin_layout_summary">解鎖裝置時使用無序 PIN 佈局</string>
   <!-- lock screen visualizer -->
   <string name="lockscreen_visualizer_title">顯示音樂視覺化效果</string>
+  <!-- Lock screen cover art -->
+  <!-- Double tap to sleep on keyguard -->
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">重設圖樣</string>
   <string name="lockpattern_settings_reset_summary">輸入主電子郵件帳戶和關聯的密碼以重設圖樣鎖</string>
@@ -262,4 +264,11 @@
   <string name="sim_enabler_airplane_on">飛航模式開啟时無法進行此操作。</string>
   <string name="sim_enabler_in_call">通話時無法進行此操作。</string>
   <string name="sim_enabler_both_inactive">無法停用所有 SIM 卡</string>
+  <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
+  <!-- SAR information -->
+  <string name="maximum_head_level">頭：%1$s W/kg</string>
+  <string name="maximum_body_level">身體：%1$s W/kg</string>
+  <!-- IC Codes -->
+  <string name="ic_code_model">型號：%1$s</string>
+  <string name="ic_code_full">IC: %1$s</string>
 </resources>

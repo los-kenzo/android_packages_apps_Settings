@@ -255,6 +255,10 @@
   <string name="unlock_scramble_pin_layout_summary">ערבב פריסת PIN בעת פתיחת המכשיר</string>
   <!-- lock screen visualizer -->
   <string name="lockscreen_visualizer_title">הצג אפקטים בעת השמעת מוזיקה</string>
+  <!-- Lock screen cover art -->
+  <string name="lockscreen_media_art_title">הצג תמונת אלבום/מדיה</string>
+  <!-- Double tap to sleep on keyguard -->
+  <string name="double_tap_sleep_anywhere_title">הקש פעמיים בכל מקום להכנסה למצב שינה</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">איפוס דפוס</string>
   <string name="lockpattern_settings_reset_summary">הזן חשבון דוא\"ל ראשי וסיסמה משויכת כדי לאפס את דפוס הנעילה</string>
@@ -422,4 +426,11 @@
   <string name="sub_activate_failed">הפעלה נכשלה.</string>
   <string name="sub_deactivate_success">SIM בוטל.</string>
   <string name="sub_deactivate_failed">ביטול הפעלה נכשלה.</string>
+  <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
+  <!-- SAR information -->
+  <string name="maximum_head_level">ראש: %1$s  W/kg</string>
+  <string name="maximum_body_level">גוף: %1$s W/kg</string>
+  <!-- IC Codes -->
+  <string name="ic_code_model">דגם: %1$s</string>
+  <string name="ic_code_full">IC: %1$s</string>
 </resources>

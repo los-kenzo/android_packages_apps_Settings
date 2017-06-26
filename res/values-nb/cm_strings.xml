@@ -253,6 +253,10 @@
   <string name="unlock_scramble_pin_layout_summary">Endre PIN layout når enheten låses opp</string>
   <!-- lock screen visualizer -->
   <string name="lockscreen_visualizer_title">Vis musikk visualizer</string>
+  <!-- Lock screen cover art -->
+  <string name="lockscreen_media_art_title">Vis media coverbilde</string>
+  <!-- Double tap to sleep on keyguard -->
+  <string name="double_tap_sleep_anywhere_title">Dobbelttrykk for å slukke hvor som helst</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Tilbakestille mønster</string>
   <string name="lockpattern_settings_reset_summary">Angi primær e-postkonto og tilhørende passord for å tilbakestille mønsterlås</string>
@@ -420,4 +424,11 @@
   <string name="sub_activate_failed">Aktivering mislyktes.</string>
   <string name="sub_deactivate_success">SIM deaktivert.</string>
   <string name="sub_deactivate_failed">Deaktivering mislyktes.</string>
+  <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
+  <!-- SAR information -->
+  <string name="maximum_head_level">Hode: %1$s W/kg</string>
+  <string name="maximum_body_level">Innhold: %1$s W/kg</string>
+  <!-- IC Codes -->
+  <string name="ic_code_model">Modell: %1$s</string>
+  <string name="ic_code_full">IC: %1$s</string>
 </resources>

@@ -253,6 +253,10 @@
   <string name="unlock_scramble_pin_layout_summary">Разбъркано PIN оформление при отключване на устройството</string>
   <!-- lock screen visualizer -->
   <string name="lockscreen_visualizer_title">Покажи музикален визуализатор</string>
+  <!-- Lock screen cover art -->
+  <string name="lockscreen_media_art_title">Показване на артистична обложка</string>
+  <!-- Double tap to sleep on keyguard -->
+  <string name="double_tap_sleep_anywhere_title">Двойно почукване върху произволно място на екрана, за да спи</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Възстановяване на шаблона</string>
   <string name="lockpattern_settings_reset_summary">Въведете основния имейл акаунт и свързаната с него парола за нулиране заключването на шаблона</string>
@@ -420,4 +424,11 @@
   <string name="sub_activate_failed">Активирането е неуспешно.</string>
   <string name="sub_deactivate_success">СИМ картата е деактивирана.</string>
   <string name="sub_deactivate_failed">Неуспешно дезактивиране.</string>
+  <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
+  <!-- SAR information -->
+  <string name="maximum_head_level">Глава: %1$s W/kg</string>
+  <string name="maximum_body_level">Тяло: %1$s W/kg</string>
+  <!-- IC Codes -->
+  <string name="ic_code_model">Модел: %1$s</string>
+  <string name="ic_code_full">IC: %1$s</string>
 </resources>

@@ -253,6 +253,10 @@
   <string name="unlock_scramble_pin_layout_summary">Cihaz kilidini açarken PIN düzenini karıştırır</string>
   <!-- lock screen visualizer -->
   <string name="lockscreen_visualizer_title">Müzik görselleştiriciyi görüntüle</string>
+  <!-- Lock screen cover art -->
+  <string name="lockscreen_media_art_title">Medya kapak resmini göster</string>
+  <!-- Double tap to sleep on keyguard -->
+  <string name="double_tap_sleep_anywhere_title">Uyutmak için herhangi bir yere iki defa dokunun</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Deseni sıfırla</string>
   <string name="lockpattern_settings_reset_summary">Desen kilidini yeniden ayarlamak için birincil e-posta hesabınızı ve ilişkili şifreyi girin</string>
@@ -420,4 +424,11 @@
   <string name="sub_activate_failed">Etkinleştirme başarısız.</string>
   <string name="sub_deactivate_success">SIM devre dışı bırakıldı.</string>
   <string name="sub_deactivate_failed">Devre dışı bırakma başarısız.</string>
+  <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
+  <!-- SAR information -->
+  <string name="maximum_head_level">Baş: %1$s W/kg</string>
+  <string name="maximum_body_level">Vücut: %1$s W/kg</string>
+  <!-- IC Codes -->
+  <string name="ic_code_model">Model: %1$s</string>
+  <string name="ic_code_full">IC: %1$s</string>
 </resources>

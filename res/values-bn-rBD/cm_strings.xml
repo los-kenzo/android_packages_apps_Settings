@@ -162,6 +162,8 @@
   <string name="unlock_scramble_pin_layout_title">একত্র বিন্যাস</string>
   <string name="unlock_scramble_pin_layout_summary">একত্র পিন বিন্যাস যখন ডিভাইস অবমুক্ত করার সময়</string>
   <!-- lock screen visualizer -->
+  <!-- Lock screen cover art -->
+  <!-- Double tap to sleep on keyguard -->
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">নকসা পুনঃবিন্যাস</string>
   <string name="lockpattern_settings_reset_summary">প্রাথমিক ই-মেইল একাউন্ট ও সংশ্লিষ্ট পাসওয়ার্ড লিখুন প্যাটার্ন পুনঃবিন্যাস করতে</string>
@@ -250,4 +252,9 @@
   <string name="update_recovery_summary">বিল্ট ইন রিকভারি সিস্টেম আপডেটের সাথে আপডেট করুন</string>
   <!-- Status bar - double tap to sleep -->
   <string name="status_bar_double_tap_to_sleep_title">দুই টোকা দিয়ে নিদ্রা</string>
+  <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
+  <!-- SAR information -->
+  <string name="maximum_head_level">হেডঃ %1$s W/kg</string>
+  <string name="maximum_body_level">বডিঃ %1$s W/kg</string>
+  <!-- IC Codes -->
 </resources>

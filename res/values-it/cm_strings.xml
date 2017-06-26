@@ -253,6 +253,10 @@
   <string name="unlock_scramble_pin_layout_summary">Mescola la disposizione del tastierino PIN per lo sblocco del dispositivo</string>
   <!-- lock screen visualizer -->
   <string name="lockscreen_visualizer_title">Mostra visualizzatore musicale</string>
+  <!-- Lock screen cover art -->
+  <string name="lockscreen_media_art_title">Mostra copertina album</string>
+  <!-- Double tap to sleep on keyguard -->
+  <string name="double_tap_sleep_anywhere_title">Sospensione con doppio tocco</string>
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Reimposta la sequenza</string>
   <string name="lockpattern_settings_reset_summary">Inserisci l\'email principale e la relativa password per reimpostare la sequenza di sblocco</string>
@@ -420,4 +424,11 @@
   <string name="sub_activate_failed">Attivazione fallita.</string>
   <string name="sub_deactivate_success">SIM disattivata.</string>
   <string name="sub_deactivate_failed">Disattivazione fallita.</string>
+  <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
+  <!-- SAR information -->
+  <string name="maximum_head_level">Testa: %1$s W/kg</string>
+  <string name="maximum_body_level">Corpo: %1$s W/kg</string>
+  <!-- IC Codes -->
+  <string name="ic_code_model">Modello: %1$s</string>
+  <string name="ic_code_full">IC: %1$s</string>
 </resources>

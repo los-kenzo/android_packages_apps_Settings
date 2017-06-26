@@ -253,6 +253,8 @@
   <string name="unlock_scramble_pin_layout_summary">Nasumičan PIN raspored pri otključavanju uređaja</string>
   <!-- lock screen visualizer -->
   <string name="lockscreen_visualizer_title">Prikaži vizualizator glazbe</string>
+  <!-- Lock screen cover art -->
+  <!-- Double tap to sleep on keyguard -->
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">Ponovno postavi uzorak</string>
   <string name="lockpattern_settings_reset_summary">Unesite primarni e-mail račun i pridruženu lozinku da biste vratili uzorak</string>
@@ -406,4 +408,11 @@
   <string name="sub_activate_failed">Aktivacija nije uspjela.</string>
   <string name="sub_deactivate_success">SIM deaktiviran.</string>
   <string name="sub_deactivate_failed">Deaktivacija nije uspjela.</string>
+  <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
+  <!-- SAR information -->
+  <string name="maximum_head_level">Glava: %1$s W/kg</string>
+  <string name="maximum_body_level">Tijelo: %1$s W/kg</string>
+  <!-- IC Codes -->
+  <string name="ic_code_model">Model: %1$s</string>
+  <string name="ic_code_full">IC: %1$s</string>
 </resources>

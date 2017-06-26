@@ -242,6 +242,8 @@
   <string name="unlock_scramble_pin_layout_summary">ಸಾಧನವನ್ನು ಅನ್‍ಲಾಕ್ ಮಾಡುವಾಗ ಪಿನ್ ವಿನ್ಯಾಸವನ್ನು ಅಸ್ತವ್ಯಸ್ತಗೊಳಿಸು</string>
   <!-- lock screen visualizer -->
   <string name="lockscreen_visualizer_title">ಸಂಗೀತ ದೃಶ್ಯೀಕರಣವನ್ನು ಪ್ರದರ್ಶಿಸು</string>
+  <!-- Lock screen cover art -->
+  <!-- Double tap to sleep on keyguard -->
   <!-- Protected apps lockpattern reset button -->
   <string name="lockpattern_reset_button">ನಮೂನೆ ಮರುಹೊಂದಿಸು</string>
   <string name="lockpattern_settings_reset_summary">ನಮೂನೆ ಲಾಕನ್ನು ಮರುಹೊಂದಿಸಲು ಪ್ರಾಥಮಿಕ ಇಮೇಲ್ ಖಾತೆ ಹಾಗು ಸಂಬಂಧಪಟ್ಟ ಪ್ರವೇಶಪದವನ್ನು ಹಾಕಿ</string>
@@ -368,4 +370,11 @@
   <string name="sub_activate_failed">ಸಕ್ರಿಯಗೊಳಿಸುವಿಕೆ ವಿಫಲಗೊಂಡಿದೆ.</string>
   <string name="sub_deactivate_success">SIM ನಿಷ್ಕ್ರಿಯಗೊಂಡಿದೆ.</string>
   <string name="sub_deactivate_failed">ನಿಷ್ಕ್ರಿಯಗೊಳಿಸುವಿಕೆ ವಿಫಲಗೊಂಡಿದೆ.</string>
+  <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
+  <!-- SAR information -->
+  <string name="maximum_head_level">Head: %1$s W/kg</string>
+  <string name="maximum_body_level">Body: %1$s W/kg</string>
+  <!-- IC Codes -->
+  <string name="ic_code_model">ಮಾದರಿ: %1$s</string>
+  <string name="ic_code_full">ಐಸಿ: %1$s</string>
 </resources>
