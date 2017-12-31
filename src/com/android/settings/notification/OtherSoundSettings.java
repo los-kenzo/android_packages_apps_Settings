@@ -175,7 +175,7 @@ public class OtherSoundSettings extends SettingsPreferenceFragment implements In
     };
 
     private static final SettingPref PREF_SCREENSHOT_SHUTTER_SOUND = new SettingPref(
-            TYPE_SYSTEM, KEY_SCREENSHOT_SHUTTER_SOUND, System.SCREENSHOT_SHUTTER_SOUND, DEFAULT_ON);
+            TYPE_SYSTEM, KEY_SCREENSHOT_SHUTTER_SOUND, System.SCREENSHOT_SHUTTER_SOUND, 0);
 
     private static final SettingPref[] PREFS = {
         PREF_DIAL_PAD_TONES,
